@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pdf {
+  position: relative;
+}
+.container {
+  border: 6px solid black;
+  width: 6.22in;
+  min-height: 8.78in;
+  max-height: auto;
+  overflow: hidden;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.right {
+  padding: 5rem 0.5rem 0 0.5rem;
+}
+.left {
+  padding: 0 0.5rem;
+}
+.girl-image {
+  width: 125px;
+  height: 125px;
+  margin: -17.5px 0 0 47px;
+}
+.marks-dots {
+  display: flex;
+  gap: 0 2.5px;
+}
+#name-devon {
+  font-size: 35px;
+  width: 100px;
+}
+#top-image {
+  width: 250px;
+  margin-top: -25px;
+  margin-left: -3rem;
+}
+.contact-section {
+  margin-bottom: 1rem;
+}
+.mb {
+  margin-bottom: 2rem;
+}
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+button {
+  bottom: 50px;
+  display: block;
+  left: calc(50% - 60px);
+  right: auto;
+  position: fixed;
+  padding: 1rem 1.5rem;
+  font-weight: bolder;
+  border-radius: 15px;
+}
+h2 {
+  font-size: larger;
+}
+h4 {
+  font-size: large;
+}
+p,
+li {
+  color: #515151;
+  font-size: small;
+}
+hr {
+  border: 2px solid blue;
+  height: 2.5px;
+  margin-top: 12.5px;
+  background-color: blue;
+}
+
+/* .container{
+  border:6px solid black;
+  width: 6.22in;
+  height: 8.78in;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nerko One', cursive;
+  font-family: 'Ubuntu', sans-serif;
+}
+.grid{
+  
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.right{
+
+  padding-right: 1.5rem;
+  margin-left: -4rem;
+}
+.pg2, .pg3{
+  overflow-y: hidden;
+}
+p, li{
+  color: #515151;
+  font-size: small;
+  margin-bottom: 8px;
+}
+
+.girl-image{
+  width:125px;
+  height:125px;
+  margin:-17.5px 0 0 47px;
+  
+}
+.name{
+  
+  font-size: 18px;
+  font-weight: bold;
+}
+.name h1{
+  margin-bottom: 4px;
+}
+.name h2{
+  color: #515151;
+  font-weight: bold;
+}
+#name-devon{
+  font-size:35px;
+  width: 100px;
+}
+.contact-section,.skills-section{
+ margin-left: 1.5rem;
+ margin-top: 1.4rem;
+ font-size: small;
+}
+.marks-dots{
+  display: flex;
+  gap:0 2.5px}
+h2{
+  font-size: large;
+}
+h4{
+  margin-bottom:5px;
+  font-size: 15px;
+}
+.dots{
+  margin-bottom:5px;
+}
+
+.personal-details{
+  margin-left:10px;
+}
+.this{
+  margin-bottom: 15px;
+}
+#bottom-image{
+  margin-top: -350px;
+  margin-left: 570px;
+  height:300px;
+  width: 30px;
+  
+}
+#top-image{
+  width:250px;
+  margin-top: -25px;
+  margin-left:-12px;
+}
+#image-shap2{
+  margin-top: -140.5px;
+  margin-left: -1.25px;
+  height:200px;
+  width: 250px;
+  
+}
+.technical-skills-section{
+  margin-top:1rem;
+  margin-left: 1.5rem;
+  font-size: small;
+}
+.left ul{
+  margin-left: -1rem;
+  width: 200px
+}
+#awards{
+  margin-top: 12.5px;
+  font-weight: bold;
+}
+
+.Work-experience{
+ margin-top: 2.5rem;
+}
+hr{
+  border:2px solid blue;
+  height: 2.5px;
+  margin-top: 12.5px;
+  background-color: blue;
+}
+
+#top-image2{
+  width:250px;
+  margin-top: -75px;
+  margin-left:-12px;
+}
+#bottom-image2{
+  margin-top: -350px;
+  margin-left: 570px;
+  height:300px;
+  width: 30px;
+  
+}
+#image-shap22{
+  margin-top: -150.5px;
+  margin-left: -1.5rem;
+  height:200px;
+  width: 250px;
+  
+}
+.icon{
+  width: 10px;
+}
+main {
+  position: relative;
+}
+button{
+  bottom: 50px;
+  display: block;
+  left: calc(50% - 60px);
+  right: auto;
+  position: fixed;
+  padding: 1rem 1.5rem;
+  font-weight: bolder;
+  border-radius: 15px;
+} */
