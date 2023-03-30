@@ -13,24 +13,38 @@ import PersonalInterest from "@/components/thirdPage/PersonalInterest";
 import Projects from "@/components/thirdPage/Projects";
 import jsPDF from "jspdf";
 import { useRef, useState } from "react";
-// import * as html2pdf from "html2pdf.js";
+// import dynamic from "next/dynamic";
+// import html2pdf from "html2pdf.js";
+// const html2pdf = dynamic(() => import("html2pdf.js"), {
+//   ssr: false,
+// });
 import { PDFExport } from "@progress/kendo-react-pdf";
 
 export default function Home() {
   const pdfref = useRef(null);
-  const downloadPdf = () => {
-    pdfref.current.save();
+  // // const downloadPdf = () => {
+  // //   pdfref.current.save();
+  // };
+  // const downloadPdf = () => {
+  //   const doc = new jsPDF();
+  //   const pdf = document.getElementById("ResumePrint");
+  //   doc.html(pdf.innerHTML);
+  //   doc.save();
+  // };
+  const downloadPdf = async () => {
+    const html2pdf = await import("html2pdf.js");
+    console.log(html2pdf.default);
+    const pdf = document.getElementById("ResumePrint");
+    const opt = {
+      margin: [0.25, 0, 0.25, 0],
+      filename: "Resume.pdf",
+      image: { type: "jpeg", quality: 1 },
+      html2canvas: { scale: 4, useCORS: true, dpi: 192, letterRendering: true },
+      jsPDF: { unit: "in", format: "A4", orientation: "portrait" },
+      pagebreak: { mode: ["avoid-all"] },
+    };
+    html2pdf.default(pdf, opt);
   };
-  //   const downloadPdf = () => {
-  //     const pdf = document.getElementById("ResumePrint");
-  //     const opt = {
-  //       filename: "Resume.pdf",
-  //       image: { type: "jpeg", quality: 1 },
-  //       html2canvas: { scale: 3 },
-  //       jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
-  //     };
-  //     html2pdf(pdf, opt);
-  //   };
   return (
     <>
       <Head>
@@ -62,7 +76,6 @@ export default function Home() {
           <div className="container" id="ResumePrint">
             <div className="grid">
               <div className="left">
-                <img src="/shape1.png" id="top-image" />
                 <div>
                   <img src="/girl_image.png" className="girl-image" />
                 </div>
@@ -78,6 +91,7 @@ export default function Home() {
               <div className="right">
                 <Profile />
                 <Education />
+                <WorkExperience />
                 <WorkExperience />
                 <Projects />
               </div>

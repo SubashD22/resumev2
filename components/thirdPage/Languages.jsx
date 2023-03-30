@@ -3,7 +3,7 @@ import Skills from "../firstPage/Skills";
 
 const Languages = () => {
   return (
-    <div className="mb">
+    <>
       <h2 className="techskils">Languages</h2>
       <p className="tech">English</p>
       <div className="marks-dots">
@@ -19,7 +19,7 @@ const Languages = () => {
       <div className="marks-dots">
         <Skills points={8} />
       </div>
-    </div>
+    </>
   );
 };
 

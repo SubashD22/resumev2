@@ -4,11 +4,11 @@ import React from "react";
 const Awards = () => {
   const { awards } = useResumeContext();
   return (
-    <div className="mb">
+    <>
       <h2 id="awards">Awards</h2>
       {awards.map((a, i) => {
         return (
-          <div key={i}>
+          <React.Fragment key={i}>
             <h4>{a.title}</h4>
             <p>{a.time}</p>
 
@@ -18,10 +18,10 @@ const Awards = () => {
             <ul>
               <li>{a.note}</li>
             </ul>
-          </div>
+          </React.Fragment>
         );
       })}
-    </div>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ const PersonalInterest = () => {
   const { personalIntrest } = useResumeContext();
 
   return (
-    <div className="mb">
+    <>
       <h4 className="personal">Personal Interest</h4>
 
       <ul>
@@ -13,7 +13,7 @@ const PersonalInterest = () => {
           return <li key={i}>{p}</li>;
         })}
       </ul>
-    </div>
+    </>
   );
 };
 

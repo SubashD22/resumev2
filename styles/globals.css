@@ -2,31 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 2;
 }
 .pdf {
   position: relative;
 }
 .container {
   border: 6px solid black;
-  width: 6.22in;
+  width: 8.23in;
   min-height: 8.78in;
   max-height: auto;
   overflow: hidden;
 }
 .grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  /* grid-template-columns: 40% 60%; */
 }
 .right {
   padding: 5rem 0.5rem 0 0.5rem;
+  width: 60%;
 }
 .left {
+  float: left;
   padding: 0 0.5rem;
+  width: 40%;
 }
 .girl-image {
   width: 125px;
   height: 125px;
-  margin: -17.5px 0 0 47px;
+  margin: 5px 0 0 47px;
 }
 .marks-dots {
   display: flex;

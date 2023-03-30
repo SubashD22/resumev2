@@ -4,11 +4,11 @@ import React from "react";
 const Certifications = () => {
   const { certifications } = useResumeContext();
   return (
-    <div className="mb">
+    <>
       <h2>Certifications</h2>
       {certifications.map((c, i) => {
         return (
-          <div key={i}>
+          <React.Fragment key={i}>
             <h4>{c.title}</h4>
             <p>{c.time}</p>
 
@@ -18,10 +18,10 @@ const Certifications = () => {
             <ul>
               <li>{c.note}</li>
             </ul>
-          </div>
+          </React.Fragment>
         );
       })}
-    </div>
+    </>
   );
 };
 
